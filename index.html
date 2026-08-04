@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Debra Event Management</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.0/collection/components/icon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
+            color: black;
+            text-align: center;
+            padding: 5rem 2rem;
+            border-radius: 0 0 50% 50% / 5% 5%;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+            .header h1 {
+                font-size: 4rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            .header p {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+        .btn-custom {
+            background-color: #6e45e2;
+            border-color: #6e45e2;
+            color: white;
+            font-weight: bold;
+            padding: 0.75rem 2rem;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .btn-custom:hover {
+                background-color: #5641a9;
+                border-color: #5641a9;
+            }
+
+        .section {
+            background-color: lightgoldenrodyellow;
+            padding: 4rem 2rem;
+            margin-top: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .section:hover {
+                transform: scale(1.05);
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            }
+
+            .section h2 {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            .section p {
+                font-size: 1.25rem;
+                line-height: 1.6;
+            }
+
+        .testimonial-section {
+            background-color: #f4f4f9;
+            padding: 4rem 2rem;
+            margin-top: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+
+            .testimonial-section h2 {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+        .testimonial {
+            margin-bottom: 2rem;
+            text-align: center;
+            background-color:white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .testimonial:hover {
+                transform: scale(1.05);
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            }
+
+        .image-section {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+            .image-section div {
+                width: 30%;
+                text-align: center;
+            }
+
+            .image-section img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            }
+
+            .image-section p {
+                text-align: center;
+                font-size: 1.25rem;
+                margin-top: 1rem;
+            }
+
+        .service-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 3rem;
+        }
+
+        .service-box {
+            width: 45%;
+            background-color: white; 
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .service-box:hover {
+                transform: scale(1.05);
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            }
+
+            .service-box h3 {
+                font-size: 1.8rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            .service-box p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+        .footer-navbar {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+            .footer-navbar a {
+                color: #fff !important;
+                text-decoration: none;
+                font-size: 18px;
+                margin: 0 10px;
+                transition: color 0.3s ease;
+            }
+
+                .footer-navbar a:hover {
+                    color: #ffcc00 !important;
+                }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="header">
+            <h1 class="display-4">Welcome to Debra Event Management</h1>
+            <p class="lead">Your one-stop solution for managing events efficiently.</p>
+            <hr class="my-4">
+            <p class="lead mb-4">
+                Connect with us
+            </p>
+            <div class="social-icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Upcoming Events</h2>
+            <p>Discover our latest musical shows featuring top musicians and bands. From rock to classical, we offer a wide range of performances to cater to every musical taste. Check out our calendar and book your tickets now for an unforgettable experience!</p>
+            <a asp-page="Services" class="btn btn-secondary mt-3">View Events</a>
+        </div>
+
+        <div class="section">
+            <h2>About Us</h2>
+            <p>Debra Event Service is dedicated to delivering unforgettable musical experiences. Our mission is to bring the best live music to audiences around the world. Our team of experienced professionals works tirelessly to ensure every event is a success. Learn more about our journey and the values that drive us.</p>
+            <a asp-page="About" class="btn btn-secondary mt-3">Learn More</a>
+        </div>
+        
+
+        <div class="section">
+            <h2>Services</h2>
+            <div class="service-boxes">
+                <div class="service-box">
+                    <h3>Musical Concerts & Event Planning</h3>
+                    <p>From concept to execution, we handle every detail of your musical event to ensure a seamless and memorable experience.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Venue Selection And Coordination</h3>
+                    <p>We assist in choosing the perfect venue for your event, managing logistics, and coordinating all necessary arrangements.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Talent Booking And Management</h3>
+                    <p>Our extensive network allows us to secure top musical talent for your event, ensuring exceptional performances.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Production And Technical Support</h3>
+                    <p>From sound systems to lighting and stage setup, we provide comprehensive technical support to enhance your event's production quality.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Marketing And Promotion</h3>
+                    <p>We create strategic marketing campaigns to promote your event effectively, maximizing attendance and engagement.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Comprehensive Music Event Planning Checklist</h3>
+                    <p>Our detailed planning checklist ensures that no aspect of your event is overlooked, from initial planning stages to post-event evaluations.</p>
+                </div>
+                <div class="service-box">
+                    <h3>On-Site Coordination And Execution</h3>
+                    <p>We manage on-site operations and logistics during your event, ensuring everything runs smoothly and according to plan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <div>
+                <img src="/images/m4.webp" alt="Event Image 1">
+                <p>Captivating performances await you at our events.</p>
+            </div>
+            <div>
+                <img src="/images/band.jpg" alt="Event Image 2">
+                <p>Join us for memorable experiences with top musicians.</p>
+            </div>
+            <div>
+                <img src="/images/m3.webp" alt="Event Image 3">
+                <p>Explore our event venues and immerse yourself in music.</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="testimonial-section">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Attended a concert organized by Debra Event Service and it was fantastic! The atmosphere was electric, and the performances were top-notch. Can't wait for the next one!"</p>
+                <p><strong>- John Doe</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Smooth ticket booking process and great customer service. The event was well-organized and everything went off without a hitch. Highly recommend Debra Event Service!"</p>
+                <p><strong>- Jane Smith</strong></p>
+            </div>
+        <a asp-page="Services" class="btn btn-secondary mt-3">Read More Testimonials</a>
+        </div>
+
+        
+
+    <footer class="footer-navbar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <p>&copy; 2024 Debra Event Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
